@@ -14,11 +14,11 @@ condition = gf == "yes"
 if condition: 
     print("nice!")
     her_age = int(input("how old is she?\n"))
-    if her_age > 25:
+    if her_age > age:
         print(" oh, she is older than you, you should hurry up and make babies already! ")
     else:
         print("not bad, you still have time to make babies. enjoy your life for now! ")
 else:
-    print("sad!") 
-    breakpoint
+    print("sad!")
+
 

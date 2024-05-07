@@ -5,7 +5,7 @@ game = input(hello + " wanna play the roll dice game?\n")
 if game == "yes": 
     print("let's start the game") 
     count = 1
-# run loop till count is less than 5 update
+# run loop till count is less than 100 update
     while count < 100:
         count = count + 1
         roll = random.randint(1,6)

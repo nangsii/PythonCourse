@@ -1,7 +1,8 @@
-expenses = ['k','z','3','*']
+expenses = [6,7,3,8]
 
-sum = '&'
-for x in expenses:
-    sum = sum + x
-print(sum)
+total = sum(expenses)
+
+print('your total is $', total, sep = "")
+# ask number of expenses
+num_espenses = input("Total no. of expenses:\n")
 
