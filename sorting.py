@@ -7,10 +7,12 @@ def my_swap(my_list):
     pass
 
 # 2. find the max element in a list 
-# input list: [3, 9, 5]
 # output int:9
 def my_max(my_list):
-    pass
+    my_list = [3, 9, 5]
+
+        
+
 
 # 3. find the nth max element in a list 
 # input list: [3, 9, 5] with nth_max = 1
