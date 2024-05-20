@@ -42,23 +42,23 @@
 # output int: 5
 
 
-def nth_max(my_list, n):
-    count = 0
-    # extend the life scope of the variable
-    nth_max
-    while count < n:
-        count = count + 1
-        nth_max = my_list[0]
-        for x in my_list:
-            if x > nth_max:
-                nth_max = x        
-        my_list.remove(nth_max)
-    return nth_max    
+# def nth_max(my_list, n):
+#     count = 0
+#     # extend the life scope of the variable
+#     nth_max
+#     while count < n:
+#         count = count + 1
+#         nth_max = my_list[0]
+#         for x in my_list:
+#             if x > nth_max:
+#                 nth_max = x        
+#         my_list.remove(nth_max)
+#     return nth_max    
             
-my_list = [3, -5, -2, -2000, -150] 
-n = 2
-result_nth_max = nth_max(my_list, n)
-print(result_nth_max)
+# my_list = [3, -5, -2, -2000, -150] 
+# n = 2
+# result_nth_max = nth_max(my_list, n)
+# print(result_nth_max)
 
 # option 2 move the nth_max to my_list[0]
 
@@ -68,16 +68,21 @@ print(result_nth_max)
 # input list : [3, 6, 1, 9, 5]
 # output list: [1, 3, 5, 6, 9]
 
-# def my_sort(my_list):
-#     max_num = my_list[0]
-#     for x in my_list:
-#         if x > max_num: 
-#             max_num = x 
-#     y = my_list[0]  
-#     my_list[0] = max_num
-#     my_list[max_num] = y
-#     return my_list
+def my_sort(my_list):
+    innitial_lenth = len(my_list)
+    count = 0
+    new_list = []
+    while count < innitial_lenth:
+        count = count + 1
+        min_num = my_list[0]
+        for x in my_list:
+            if x < min_num: 
+                min_num = x  
+        new_list.append(min_num)
+        my_list.remove(min_num)       
+    return new_list
         
-# test_list = [3, 6, 1, 9, 5]
-# result_my_sort =  my_sort(test_list)
-# print(result_my_sort)
+# test_list = [3, 6, 1, 9, 5, 4, 8, 10, -1, -4, 0,-500, 993456, 9, 3, 9]
+test_list = [3]
+result_my_sort =  my_sort(test_list)
+print(result_my_sort)
